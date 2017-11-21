@@ -54,7 +54,7 @@ catkin_make
 
 After following the build instructions:
 
-In a new terminal:
+To run the simulation, In a new terminal:
 ```
 cd ~/catkin_ws/
 source devel/setup.bash
@@ -80,6 +80,12 @@ source devel/setup.bash
 cd src/walker/results
 rosbag info recording.bag
 ```
+
+To replay the bag file, from the results folder run the following command in the terminal:
+```
+rosbag play recording.bag
+```
+
 
 
 
