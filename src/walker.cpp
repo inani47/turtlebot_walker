@@ -37,7 +37,7 @@
 #include "std_msgs/String.h"
 #include "sensor_msgs/LaserScan.h"
 #include "geometry_msgs/Twist.h"
-#include "include/walker.h"
+#include "walker/walker.h"
 
 void Walker::callback(const sensor_msgs::LaserScan::ConstPtr& input) {
   float min = 10;

@@ -37,7 +37,7 @@
 #include "std_msgs/String.h"
 #include "sensor_msgs/LaserScan.h"
 #include "geometry_msgs/Twist.h"
-#include "include/walker.h"
+#include "walker/walker.h"
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "walker");
