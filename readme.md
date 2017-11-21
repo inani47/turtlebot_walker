@@ -35,7 +35,7 @@ cd ~/catkin_ws/
 catkin_make
 source devel/setup.bash
 cd src/
-git clone --recursive https://github.com/inani47/turtlebot_walker.git
+git clone --recursive https://github.com/inani47/walker.git
 cd ..
 catkin_make
 ```
@@ -44,7 +44,7 @@ If you wish to run this code in an existing catkin workspace:
 cd ~/catkin_ws/
 source devel/setup.bash
 cd src/
-git clone --recursive https://github.com/inani47/turtlebot_walker.git
+git clone --recursive https://github.com/inani47/walker.git
 cd ..
 catkin_make
 ```
