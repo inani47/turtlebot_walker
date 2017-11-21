@@ -69,9 +69,7 @@ roslaunch walker walker.launch rec:=1
 
 The bag file will be stored in the results folder as recording.bag
 
-
-
-## Inspecting bag files
+## Inspecting and Replaying Bag Files
 
 To inspect the bag file go the folder where bag file was saved. In a new terminal:
 ```
@@ -81,11 +79,17 @@ cd src/walker/results
 rosbag info recording.bag
 ```
 
-To replay the bag file, from the results folder run the following command in the terminal:
+To replay the bag file, first run rosmaster from the terminal:
 ```
+roscore
+```
+Now, from the results folder run the following command in a new terminal:
+```
+cd ~/catkin_ws/
+source devel/setup.bash
+cd src/walker/results
 rosbag play recording.bag
 ```
-
 
 
 
