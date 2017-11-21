@@ -3,7 +3,7 @@
 
 ## Overview
 
-This package modifies the default TurtleBot simulation implements a simple walker algorithm. The robot moves forward until it reaches an obstacle (but not colliding), then rotate in place until the way ahead is clear, then move forward again and repeat. It records all messages being published on all topics except the topics related to the RGB-D sensor in a bagfile. 
+This package modifies the default Turtlebot simulation and implements a simple walker algorithm. The robot moves forward until it reaches an obstacle, then rotates in place (without colliding) until the way ahead is clear, then move forward again and repeat. It records all messages being published on all topics except the topics related to the RGB-D sensor in a bagfile. 
 
 ## License
 
