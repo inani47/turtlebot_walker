@@ -37,13 +37,13 @@
 #include "std_msgs/String.h"
 #include "sensor_msgs/LaserScan.h"
 #include "geometry_msgs/Twist.h"
-#include "walker.h"
+#include "include/walker.h"
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "walker");
   ros::NodeHandle n;
   // sleep for 5 seconds while gazebo starts
-  ros::Duration(5).sleep(); 
+  ros::Duration(5).sleep();
   Walker walk;
   ros::Subscriber subLaserScan;
   ros::Publisher pub;
